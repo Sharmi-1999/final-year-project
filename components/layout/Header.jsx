@@ -43,7 +43,7 @@ export default function Header() {
             id="example-navbar-danger"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item">
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <Link href="/about">
                   <h1 className="text-white text-base font-bold px-10">
                     About

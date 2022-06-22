@@ -71,3 +71,7 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
+
+.hover-class:hover {
+  color: rgb(217, 255, 0);
+}
