@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: 300;
+  src: local("HKGrotesk"), url(./fonts/HKGrotesk-Light.otf) format("opentype");
+}
+/* 
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: 400;
+  src: local("HKGrotesk"), url(./fonts/HKGrotesk-Regular.otf) format("opentype");
+} */
+
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: 700;
+  src: local("HKGrotesk"), url(./fonts/HKGrotesk-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: 900;
+  src: local("HKGrotesk"), url(./fonts/HKGrotesk-Black.otf) format("opentype");
+}
+
+body {
+  background-color: #1f1f24;
+  font-family: "HKGrotesk";
+  font-weight: 300;
+}
+
+.border-1 {
+  border-width: 1px;
+}
+
+.border-b-1 {
+  border-bottom-width: 1px;
+}
+
+.line-through .inner {
+  color: white;
+}
+
+.line-through.outer {
+  color: var(--color-line);
+  text-decoration: line-through;
+}
+
+.neue-haas {
+  font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.home-page {
+  background: radial-gradient(
+    44.87% 84.73% at 50% -20.61%,
+    rgba(231, 35, 129, 0.03) 0%,
+    rgba(231, 35, 176, 0.06) 43.75%,
+    rgba(35, 66, 231, 0) 100%
+  );
+}
+
+.text-transition_inner {
+  overflow: hidden !important;
+  height: 120% !important;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 1em 0;
+  padding: 0;
+}
