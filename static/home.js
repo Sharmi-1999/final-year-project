@@ -22,7 +22,7 @@ export const integrateData = [
 export const serviceData = [
   {
     title: "Towing",
-    locations: ["Jalpaiguri", "Darjeeling", "Darjeeling"],
+    locations: ["Jalpaiguri", "Gangtok", "Darjeeling"],
   },
   {
     title: "AC repairing",
@@ -47,4 +47,5 @@ export const locationData = {
   Burdwan: ["Station (ph: 12345678)", "Bus stand (ph: 12345678)"],
   Esplanade: ["park street (ph: 12345678)", "Chowmatha (ph: 12345678)"],
   Gangtok: ["DBC Road (ph: 12345678)", "Colony more (ph: 12345678)"],
+  Dumdum: ["Barasat", "Bibek Nagar"],
 };
