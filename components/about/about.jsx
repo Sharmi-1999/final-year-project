@@ -7,33 +7,24 @@ export default function About() {
         About
       </h1>
 
-      <h1 className="text-left py-5 text-white font-black text-3xl sm:text-5xl lg:text-2xl lg:w-12/12">
-        Jalpaiguri
-      </h1>
       <h3 className="text-base text-white">
-        Welcome to Blitzllama Labs Inc. (“us”, “we”, or “our”) operates
-        <a href="https://blitzllama.com">https://blitzllama.com</a>
-        (here in after referred to as “Service”). Our Privacy Policy governs
-        your visit to{" "}
-        <a href="https://blitzllama.com">https://blitzllama.com</a>, and
-        explains how we collect,safeguard and disclose information that results
-        from your use of our Service. We use your data to provide and improve
-        Service. By using Service, you agree to the collection and use of
-        information in accordance with this policy. Unless otherwise defined in
-        this Privacy Policy, the terms used in this Privacy Policy have the same
-        meanings as in our Terms and Conditions.Our Terms and Conditions
-        (“Terms”) govern all use of our Service and together with the Privacy
-        Policy constitutes your agreement with us (“agreement”).
+        Everyone wants the best job. Be it a fresher or an experienced
+        candidate. There is always a different definition of best. For some, the
+        best is a 9-5 job while some prefer flexible hours and the profile that
+        they want. However, one of the significant factors to decide is the type
+        of company you are getting into. There are advertising agencies,
+        startups, product-based, service-based companies, and more. You make a
+        choice either on what you like or with your past experience. In this
+        article, we will explore one of the important types of companies. We
+        will be looking at what are service-based companies, some of the top
+        service-based companies in India, and how to get into one. A
+        service-based company is the one that provides customers, clients the
+        ultimate solution to their requirements or a service to another company.
+        The service offered by the company is intangible and can be provided in
+        the form of skills, amenities, and expertise. For example, a great IT
+        Software solution for your company is how a service-based company
+        provides its value to the client.
       </h3>
-      <div
-        className="flex mt-5 mb-20 px-8 py-4 mx-2 lg:mx-0 rounded-xl border border-solid border-secondary md:w-full lg:w-11/12"
-        style={{ backgroundColor: "#1C1C21" }}
-      >
-        <img src="/images/ensure-icon.svg" />
-        <h1 className="text-white text-sm lg:text-lg ml-2 font-bold">
-          All our plans ensure that your data is 100% protected!
-        </h1>
-      </div>
     </div>
   );
 }

@@ -25,15 +25,6 @@ export default function Main() {
         (“Terms”) govern all use of our Service and together with the Privacy
         Policy constitutes your agreement with us (“agreement”).
       </h3>
-      <div
-        className="flex mt-5 mb-20 px-8 py-4 mx-2 lg:mx-0 rounded-xl border border-solid border-secondary md:w-full lg:w-11/12"
-        style={{ backgroundColor: "#1C1C21" }}
-      >
-        <img src="/images/ensure-icon.svg" />
-        <h1 className="text-white text-sm lg:text-lg ml-2 font-bold">
-          All our plans ensure that your data is 100% protected!
-        </h1>
-      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 function FooterComponent() {
@@ -11,7 +12,13 @@ function FooterComponent() {
             className="flex items-center text-white font-bold  mr-2"
             style={{ cursor: "pointer" }}
           >
-            <img className="mr-1 w-6 md:w-auto" src="/images/launch.svg"></img>{" "}
+            <Image
+              className="mr-1 w-6 md:w-auto"
+              src="/images/watch.svg"
+              alt=""
+              width={28}
+              height={26}
+            />{" "}
             <span className="text-base lg:text-lg text-danger tracking-widest font-black ml-2">
               JGEC SERVICES
             </span>
@@ -20,14 +27,8 @@ function FooterComponent() {
 
         <div className="col-start-7 md:col-start-10 col-span-6 md:col-span-2 text-white font-bold">
           <ul>
-            <li className="text-base lg:text-lg mb-2">
-              <Link href="/terms">Terms & Conditions</Link>
-            </li>
-            <li className="text-base lg:text-lg mb-2">
-              <Link href="/privacy">Privacy policy</Link>
-            </li>
             <li className="text-base lg:text-lg">
-              <Link href="https://www.linkedin.com/company/blitz-llama/">
+              <Link href="https://www.linkedin.com/in/sharmistha-mandal-636744194/">
                 Contact us
               </Link>
             </li>

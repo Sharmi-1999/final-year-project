@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { preciseData, launchData } from "../../static/home";
 
 const Feature = () => {
@@ -8,7 +9,13 @@ const Feature = () => {
         <div className="col-span-12 md:col-start-2 md:col-span-5 flex items-center">
           <div className="px-5 md:px-0">
             <div className="flex items-center text-white font-bold  mr-2">
-              <img className="mr-1 w-6 md:w-auto" src="/images/watch.svg"></img>{" "}
+              <Image
+                className="mr-1 w-6 md:w-auto"
+                src="/images/watch.svg"
+                width={28}
+                height={26}
+                alt=""
+              />{" "}
               <span className="text-base lg:text-lg tracking-widest text-primary font-black ml-2">
                 PRECISE & TARGETED
               </span>
@@ -24,7 +31,12 @@ const Feature = () => {
                     className="flex mb-1 md:mb-2 cursor-pointer items-center"
                   >
                     <div className="block w-2 md:w-3 mt-1">
-                      <img src="/images/dot.svg" />
+                      <Image
+                        src="/images/dot.svg"
+                        alt=""
+                        width={4}
+                        height={4}
+                      />
                     </div>
 
                     <div className=" ml-2 text-base lg:text-xl text-white">
@@ -37,10 +49,14 @@ const Feature = () => {
           </div>
         </div>
         <div className="col-span-12 md:pr-20 md:col-start-7 md:col-span-12 md:pl-0">
-          <img
-            className="px-3 md:px-0 w-full"
-            src="https://cdn.blitzllama.com/assets/survey/launch-img-2.svg"
-          ></img>
+          <div className="px-3 md:px-0 w-full">
+            <Image
+              src="/images/launch-img-2.svg"
+              alt=""
+              width={627}
+              height={310}
+            />
+          </div>
         </div>
       </div>
     </div>

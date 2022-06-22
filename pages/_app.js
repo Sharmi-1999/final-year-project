@@ -5,35 +5,17 @@ function MyApp({ Component, pageProps }) {
   return (
     <html lang="en">
       <Head>
-        <title>Blitzllama | Launch no-code micro-surveys</title>
+        <title>JGEC Services</title>
 
         <meta charset="utf-8" />
-        <meta
-          name="description"
-          content="Blitzllama | Discover why your users churn to build better products"
-        />
-        <meta
-          name="keywords"
-          content="Blitzllama | Discover why your users churn to build better products"
-        />
+        <meta name="description" content="JGEC Services" />
+        <meta name="keywords" content="JGEC Services" />
         <meta content="Blitzllama" name="author" />
 
         <meta httpEquiv="Cache-control" content="no-cache" />
         <meta httpEquiv="Expires" content="-1" />
 
-        <link rel="icon" type="image/png" href="/images/logo.png" />
-        <link
-          type="image/png"
-          sizes="16x16"
-          rel="icon"
-          href="/images/logo_16.png"
-        />
-        <link
-          type="image/png"
-          sizes="32x32"
-          rel="icon"
-          href="/images/logo_32.png"
-        />
+        <link rel="icon" type="image/png" href="/images/watch.svg" />
 
         <link rel="stylesheet" href="https://use.typekit.net/vff8cgz.css" />
 
@@ -72,16 +54,15 @@ function MyApp({ Component, pageProps }) {
       ></script>
       <script
         dangerouslySetInnerHTML={{
-          __html:
-            `!function () {
+          __html: `!function () {
               var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
                 analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"]; analytics.factory = function (e) { return function () { var t = Array.prototype.slice.call(arguments); t.unshift(e); analytics.push(t); return analytics } }; for (var e = 0; e < analytics.methods.length; e++) { var key = analytics.methods[e]; analytics[key] = analytics.factory(key) } analytics.load = function (key, e) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(t, n); analytics._loadOptions = e }; analytics._writeKey = "653sFsFOjAqGABVLQTDYIOUYxr9uHRll";; analytics.SNIPPET_VERSION = "4.15.3";
                 analytics.load("653sFsFOjAqGABVLQTDYIOUYxr9uHRll");
                 analytics.page();
               }
-            }();`
-        }}>
-</script>
+            }();`,
+        }}
+      ></script>
     </html>
   );
 }

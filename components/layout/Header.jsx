@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -13,21 +14,17 @@ export default function Header() {
                 className="flex items-center text-white font-bold  mr-2"
                 style={{ cursor: "pointer" }}
               >
-                <img
+                <Image
                   className="mr-1 w-6 md:w-auto"
-                  src="/images/launch.svg"
-                ></img>{" "}
+                  src="/images/watch.svg"
+                  alt=""
+                  width={28}
+                  height={26}
+                />{" "}
                 <span className="text-base lg:text-lg text-danger tracking-widest font-black ml-2">
                   JGEC SERVICES
                 </span>
               </div>
-              {/* <a>
-                <img
-                  className="w-24 md:w-full ml-4 lg:ml-2"
-                  src="/images/blitz-logo.svg"
-                  alt=""
-                ></img>
-              </a> */}
             </Link>
 
             <div className="md:hidden ml-auto">
@@ -48,11 +45,9 @@ export default function Header() {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
                 <Link href="/about">
-                  <a>
-                    <h1 className="text-white text-base font-bold px-10">
-                      About
-                    </h1>
-                  </a>
+                  <h1 className="text-white text-base font-bold px-10">
+                    About
+                  </h1>
                 </Link>
               </li>
             </ul>

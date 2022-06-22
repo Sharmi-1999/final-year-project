@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import ReactTextTransition, { presets } from "react-text-transition";
 
@@ -45,7 +46,9 @@ export default function Hero() {
             <span className="text-white text-sm md:text-xl">
               Get Started For Free
             </span>
-            <img className="pl-5" src="/images/arrow.svg" />
+            <div className="pl-5">
+              <Image src="/images/arrow.svg" alt="" width={20} height={11} />
+            </div>
           </button>
         </Link>
       </div>

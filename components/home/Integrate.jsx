@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/dist/client/link";
 import { integrateData } from "../../static/home";
 
@@ -18,7 +19,9 @@ export default function Integrate() {
             onClick={() => setShowModal(true)}
           >
             <span>Get started for free</span>
-            <img className="pl-5" src="/images/arrow.svg" />
+            <div className="pl-5">
+              <Image src="/images/arrow.svg" alt="" width={20} height={11} />
+            </div>
           </button>
         </Link>
         <p className="text-lg md:text-2xl text-center text-white mb-2 w-10/12 lg:w-6/12">
@@ -30,7 +33,7 @@ export default function Integrate() {
               key={idx}
               className="flex mb-1 md:mb-2 items-center cursor-pointer bg-secondary py-4 px-5 rounded-xl border border-solid border-secondary "
             >
-              <img className="w-10 h-10" src="/images/right.svg" />
+              <Image src="/images/right.svg" alt="" width={40} height={40} />
 
               <h2 className={"ml-3 text-white font-bold text-base md:text-lg "}>
                 {title}
