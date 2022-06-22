@@ -18,3 +18,18 @@ export const integrateData = [
     title: "Simple to use and fast",
   },
 ];
+
+export const serviceData = [
+  {
+    title: "Towing",
+  },
+  {
+    title: "AC repairing",
+  },
+  {
+    title: "Room furnishing",
+  },
+  {
+    title: "Floor Tiling",
+  },
+];

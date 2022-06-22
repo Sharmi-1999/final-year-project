@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import { serviceData } from "../../static/home";
 
 export default function Main() {
   return (
@@ -7,24 +9,22 @@ export default function Main() {
         Services
       </h1>
 
-      <h1 className="text-left py-5 text-white font-black text-3xl sm:text-5xl lg:text-2xl lg:w-12/12">
-        Jalpaiguri
-      </h1>
-      <h3 className="text-base text-white">
-        Welcome to Blitzllama Labs Inc. (“us”, “we”, or “our”) operates
-        <a href="https://blitzllama.com">https://blitzllama.com</a>
-        (here in after referred to as “Service”). Our Privacy Policy governs
-        your visit to{" "}
-        <a href="https://blitzllama.com">https://blitzllama.com</a>, and
-        explains how we collect,safeguard and disclose information that results
-        from your use of our Service. We use your data to provide and improve
-        Service. By using Service, you agree to the collection and use of
-        information in accordance with this policy. Unless otherwise defined in
-        this Privacy Policy, the terms used in this Privacy Policy have the same
-        meanings as in our Terms and Conditions.Our Terms and Conditions
-        (“Terms”) govern all use of our Service and together with the Privacy
-        Policy constitutes your agreement with us (“agreement”).
-      </h3>
+      <div>
+        {serviceData.map(({ title }, idx) => (
+          <div
+            key={idx}
+            className="flex mb-1 md:mb-2 cursor-pointer items-center"
+          >
+            <div className="block w-2 md:w-3 mt-1">
+              <Image src="/images/dot.svg" alt="" width={4} height={4} />
+            </div>
+
+            <div className="ml-2 text-base lg:text-xl text-white">
+              <span className={"mt-1 block"}>{title}</span>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
